@@ -1,0 +1,222 @@
+/* Trading Objectives Section */
+.trading-objectives-section {
+    padding: 50px 20px;
+    background: #fff; /* White background */
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* New card style */
+  .trading-objectives-card {
+    background: linear-gradient(135deg, #545454, #000); /* Lighter grey gradient background */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .objectives-title {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  .objectives-title,
+  .button-container,
+  .balance-buttons-container,
+  .div-table-container,
+  .buy-challenge-button {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .objectives-title.animate,
+  .button-container.animate,
+  .balance-buttons-container.animate,
+  .div-table-container.animate,
+  .buy-challenge-button.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Button Container Styling */
+  .button-container,
+  .balance-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust this value to increase/decrease space between buttons */
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .button-container,
+    .balance-buttons-container {
+      gap: 15px; /* Adjust gap for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .button-container,
+    .balance-buttons-container {
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+  }
+  
+  /* Challenge Buttons Styling */
+  .challenge-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #caa84e;
+    background-color: transparent;
+    color: #caa84e;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .challenge-button:hover {
+    background-color: #caa84e;
+    color: #fff;
+    transform: translateY(-5px); /* Move the button upwards */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+  }
+  
+  .challenge-button.selected {
+    background-color: #caa84e;
+    color: #fff;
+  }
+  
+  /* Balance Buttons Styling */
+  .balance-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #caa84e;
+    background-color: transparent;
+    color: #caa84e;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .balance-button:hover {
+    background-color: #caa84e;
+    color: #fff;
+    transform: translateY(-5px); /* Move the button upwards */
+    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+  }
+  
+  .balance-button.selected {
+    background-color: #caa84e;
+    color: #fff;
+  }
+  
+  /* Table Container */
+  .div-table-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 10px; /* Outer border radius */
+    overflow: hidden; /* Ensures rounded corners */
+  }
+  
+  .div-table-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .div-table-header,
+  .div-table-cell {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .div-table-header {
+    background-color: #caa84e;
+    color: #fff;
+  }
+  
+  .div-table-cell {
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #333;
+  }
+  
+  .div-table-row:first-child .div-table-header:first-child {
+    border-top-left-radius: 10px; /* Top-left corner */
+  }
+  
+  .div-table-row:first-child .div-table-header:last-child {
+    border-top-right-radius: 10px; /* Top-right corner */
+  }
+  
+  .div-table-row:last-child .div-table-cell {
+    border-bottom: none; /* Remove the bottom border */
+  }
+  
+  /* Buy Challenge Button Styling */
+  .buy-challenge-button {
+    margin-top: 20px;
+  }
+  
+  .buy-challenge-button button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #caa84e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .buy-challenge-button button:hover {
+    background-color: #a7893c; /* Slightly darker shade of the accent color */
+    transform: translateY(-5px);
+  }
+  
+  @media (max-width: 768px) {
+    .objectives-title {
+      font-size: 2rem;
+    }
+    .div-table-cell,
+    .div-table-header {
+      padding: 8px;
+      font-size: 0.875rem;
+    }
+    .buy-challenge-button button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .objectives-title {
+      font-size: 1.5rem;
+    }
+    .challenge-button,
+    .balance-button {
+      padding: 5px 10px;
+      font-size: 0.875rem;
+    }
+    .div-table-cell,
+    .div-table-header {
+      padding: 5px;
+      font-size: 0.75rem;
+    }
+    .buy-challenge-button button {
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+  }

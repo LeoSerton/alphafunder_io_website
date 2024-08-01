@@ -1,3 +1,5 @@
+/* App.css */
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#chatbot-iframe {
+  position: fixed !important;
+  bottom: 60px !important; /* Adjust this value to move up */
+  right: 40px !important;  /* Adjust this value to move left */
+  width: 350px !important;
+  height: 500px !important;
+  border: none !important;
+  display: none !important; /* Ensure it is hidden by default */
+  z-index: 999 !important;
 }
 
 @keyframes App-logo-spin {

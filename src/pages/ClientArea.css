@@ -1,0 +1,14 @@
+/* src/pages/ClientArea.css */
+
+.client-area {
+    padding: 20px;
+  }
+  
+  .client-area h1 {
+    color: #333;
+  }
+  
+  .client-area p {
+    color: #666;
+  }
+  

@@ -1,0 +1,330 @@
+/* General Styles */
+.about-us {
+    padding: 20px;
+    background: linear-gradient(135deg, #282828, #121212);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  .about-us h1 {
+    color: #caa84e;
+    margin-bottom: 20px;
+    font-size: 50px;
+  }
+  
+  .about-us h2 {
+    color: #caa84e;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  
+  /* Intro Section */
+  .intro {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #333, #000);
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in-out;
+    margin-bottom: 40px;
+  }
+  
+  .mission {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #caa84e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-story {
+    margin: 20px 0;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-story .line {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #caa84e, transparent);
+    margin: 10px auto;
+  }
+  
+  .hero-story p {
+    margin: 10px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  /* Content Section */
+  .content {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .story, .what-we-do, .vision-mission {
+    display: flex;
+    align-items: stretch;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    animation: fadeInUp 2s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .story .text, .what-we-do .text, .vision-mission .text {
+    flex: 1;
+    padding: 20px;
+    animation: slideInLeft 1.5s ease-in-out;
+  }
+  
+  .story .image, .what-we-do .image, .vision-mission .image {
+    flex: 1;
+    height: 100%;
+    animation: slideInRight 1.5s ease-in-out;
+  }
+  
+  .story .image img, .what-we-do .image img, .vision-mission .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(50%);
+    transition: filter 0.5s ease-in-out;
+    border-radius: 20px;
+    margin-bottom: -0.5rem;
+  }
+  
+  .story .image img:hover, .what-we-do .image img:hover, .vision-mission .image img:hover {
+    filter: grayscale(0%);
+  }
+  
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Why Us Section */
+  .new-why-us-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    border-radius: 15px;
+    margin-top: 40px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .new-why-us-title {
+    font-size: 2.5rem;
+    color: #caa84e;
+    margin-bottom: 20px;
+  }
+  
+  .new-why-us-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .new-why-us-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    margin-bottom: 0;
+  }
+  
+  .new-why-us-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .new-why-us-icon {
+    font-size: 36px;
+    color: #caa84e;
+    margin-bottom: 10px;
+  }
+  
+  .new-why-us-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  
+  .new-why-us-card p {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .about-us h1 {
+      font-size: 40px;
+    }
+  
+    .new-why-us-cards {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  
+    .content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-us h1 {
+      font-size: 30px;
+    }
+  
+    .intro {
+      padding: 30px 15px;
+    }
+  
+    .mission {
+      font-size: 1.25rem;
+    }
+  
+    .content {
+      gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  
+    .story, .what-we-do, .vision-mission {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .story .image, .what-we-do .image, .vision-mission .image {
+      order: -1;
+      animation: slideInLeft 1.5s ease-in-out;
+    }
+  
+    .story .text, .what-we-do .text, .vision-mission .text {
+      animation: slideInRight 1.5s ease-in-out;
+    }
+  
+    .new-why-us-cards {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  
+    .new-why-us-title {
+      font-size: 2rem;
+    }
+  
+    .new-why-us-icon {
+      font-size: 30px;
+    }
+  
+    .new-why-us-card h3 {
+      font-size: 18px;
+    }
+  
+    .new-why-us-card p {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-us h1 {
+      font-size: 25px;
+    }
+  
+    .intro {
+      padding: 20px 10px;
+    }
+  
+    .mission {
+      font-size: 1rem;
+    }
+  
+    .content {
+      gap: 10px;
+      grid-template-columns: 1fr;
+    }
+  
+    .new-why-us-title {
+      font-size: 1.5rem;
+    }
+  
+    .new-why-us-icon {
+      font-size: 24px;
+    }
+  
+    .new-why-us-card h3 {
+      font-size: 16px;
+    }
+  
+    .new-why-us-card p {
+      font-size: 10px;
+    }
+  }
+  
+  
+  

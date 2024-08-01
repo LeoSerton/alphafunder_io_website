@@ -1,0 +1,386 @@
+/* FAQ Section */
+.faq-section {
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, #333, #000);
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  .faq-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #caa84e;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInDown 1s forwards;
+  }
+  
+  .faq-search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .faq-search-bar input {
+    width: 100%;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+    color: #000; /* Ensure text color is visible */
+  }
+  
+  .faq-search-bar input::placeholder {
+    color: #fff; /* Adjust the color as needed */
+    opacity: 1; /* Ensure full opacity for the color */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 1rem;
+    color: #caa84e;
+    font-size: 1.25rem;
+    z-index: 5;
+  }
+  
+  .faq-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2rem;
+  }
+  
+  .faq-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #caa84e;
+    background-color: transparent;
+    color: #caa84e;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .faq-button.active,
+  .faq-button:hover {
+    background-color: #caa84e;
+    color: #fff;
+  }
+  
+  .faq-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .faq-category-content {
+    width: 80%;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10; /* Ensure dropdowns are above other content */
+  }
+  
+  .faq-item {
+    background: rgba(0, 115, 230, 0.1);
+    border-radius: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-shadow: none;
+    cursor: pointer;
+    overflow: hidden;
+    opacity: 1;
+    transform: translateY(0);
+    transition: background 0.3s ease, transform 0.3s ease;
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .faq-item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .faq-item.active {
+    background: rgba(0, 115, 230, 0.2);
+  }
+  
+  .faq-item:hover {
+    background-color: rgba(0, 115, 230, 0.2);
+    color: #fff;
+  }
+  
+  .faq-question {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+  }
+  
+  .faq-icon {
+    margin-left: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-answer {
+    font-size: 1rem;
+    color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0;
+  }
+  
+  .faq-answer.show {
+    max-height: 2500px;
+    padding: 1rem 0;
+  }
+  
+  .faq-answer img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+  
+  .more-info-button {
+    background-color: #caa84e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .more-info-button:hover {
+    background-color: #b8923b;
+  }
+  
+  .more-info-text {
+    margin-top: 1rem;
+  }
+  
+  /* Sub Dropdown */
+  .sub-dropdown {
+    width: 100%;
+    margin-top: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .sub-dropdown-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    background-color: rgba(0, 115, 230, 0.1);
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .sub-dropdown-title:hover,
+  .sub-dropdown-title.active {
+    background-color: rgba(0, 115, 230, 0.2);
+    color: #fff;
+  }
+  
+  .sub-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    z-index: 10; /* Ensure dropdowns are above other content */
+  }
+  
+  .sub-dropdown-content.show {
+    max-height: 2000px; /* Increase max-height to fit more content */
+    padding: 1rem 0;
+  }
+  
+  .sub-dropdown.active .sub-dropdown-content {
+    max-height: 3500px;
+    padding: 1rem 0;
+  }
+  
+  .sub-dropdown-content .faq-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  
+  /* Add this CSS to your existing stylesheet */
+  .link-button {
+    background: none;
+    border: none;
+    color: #caa84e; /* Use the default link color */
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: inherit;
+    font-family: inherit;
+    padding: 0;
+  }
+  
+  .link-button:hover,
+  .link-button:focus {
+    color: #551A8B; /* Use the default link hover color */
+    outline: none;
+  }
+  
+  
+  /* Styles for Different Screen Sizes */
+  @media (max-width: 1024px) {
+    .faq-category-content {
+      width: 90%;
+    }
+  
+    .faq-title {
+      font-size: 2.25rem;
+    }
+  
+    .faq-question {
+      font-size: 1.125rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.875rem;
+    }
+  
+    .faq-search-bar {
+      width: 90%;
+    }
+  
+    .faq-buttons {
+      gap: 8px;
+    }
+  
+    .faq-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .faq-category-content {
+      width: 95%;
+    }
+  
+    .faq-title {
+      font-size: 2rem;
+    }
+  
+    .faq-question {
+      font-size: 1.125rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.875rem;
+    }
+  
+    .faq-search-bar {
+      width: 95%;
+    }
+  
+    .faq-buttons {
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the buttons */
+    }
+  
+    .faq-button {
+      padding: 8px 12px;
+      font-size: 0.875rem;
+      flex: 1 1 auto; /* Ensure buttons are responsive but not too wide */
+      max-width: 45%; /* Set a max-width to avoid buttons being too wide */
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+      margin: 4px; /* Add margin to ensure there's space between buttons */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-title {
+      font-size: 1.75rem;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.75rem;
+    }
+  
+    .faq-search-bar input {
+      padding: 0.5rem 2rem 0.5rem 0.75rem;
+    }
+  
+    .search-icon {
+      font-size: 1rem;
+    }
+  
+    .faq-buttons {
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: center; /* Center the buttons */
+    }
+  
+    .faq-button {
+      padding: 6px 10px;
+      font-size: 0.75rem;
+      flex: 1 1 auto; /* Ensure buttons are responsive but not too wide */
+      max-width: 45%; /* Set a max-width to avoid buttons being too wide */
+      box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+      margin: 4px; /* Add margin to ensure there's space between buttons */
+    }
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

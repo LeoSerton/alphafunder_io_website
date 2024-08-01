@@ -1,0 +1,288 @@
+.footer {
+    padding: 20px;
+    background: #333;
+    color: white;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+  }
+  
+  .footer-logo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .footer-logo img {
+    height: 30px; /* Smaller logo */
+    margin-bottom: 10px;
+    margin-left: 5rem;
+  }
+  
+  .contact-info {
+    text-align: left;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-links h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin: 5px 0;
+  }
+  
+  .footer-links button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    padding: 0.5em 0;
+  }
+  
+  .footer-links button:hover {
+    color: #caa84e;
+    transform: translateY(-5px);
+  }
+  
+  .social-media {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-media h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .social-media .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure social icons are in a row */
+  }
+  
+  .social-media button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-size: 30px; /* Larger social icons */
+    margin: 5px;
+  }
+  
+  .social-media button:hover {
+    color: #caa84e;
+    transform: translateY(-5px);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 5px 0;
+  }
+  
+  .disclaimer {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  .footer-links a {
+    display: inline-block; /* Ensure the element can be transformed */
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none; /* Remove underline */
+    padding: 0.5em 0; /* Add padding to match the button */
+  }
+  
+  .footer-links a:hover {
+    color: #caa84e;
+    transform: translateY(-5px);
+  }
+  
+  
+  
+  /* MacBook Air/Pro 13-inch screens */
+  @media (min-width: 1280px) and (max-width: 1440px) {
+    .footer-logo {
+      margin-left: 20px; /* Adjust padding as needed */
+    }
+  
+    .footer-logo img {
+      height: 30px; /* Smaller logo */
+      margin-bottom: 10px;
+      margin-left: 1rem;
+    }
+  }
+  
+  /* MacBook Pro 15-inch screens */
+  @media (min-width: 1440px) and (max-width: 1680px) {
+    .footer-logo {
+      padding-left: 20px; /* Adjust padding as needed */
+    }
+  
+    .footer-logo img {
+      height: 30px; /* Smaller logo */
+      margin-bottom: 10px;
+      margin-left: 1rem;
+    }
+  }
+  
+  /* MacBook Pro 16-inch screens */
+  @media (min-width: 1680px) {
+    .footer-logo {
+      padding-left: 20px; /* Adjust padding as needed */
+    }
+  
+    .footer-logo img {
+      height: 30px; /* Smaller logo */
+      margin-bottom: 10px;
+      margin-left: 1rem;
+    }
+  }
+  
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-logo {
+      text-align: center; /* Center the logo and contact info on smaller screens */
+    }
+  
+    .footer-logo img {
+      height: 30px; /* Smaller logo for smaller screens */
+      margin-bottom: 10px;
+      margin-left: 3rem;
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+  
+    }
+  
+    .footer-links {
+      align-items: center;
+      margin-top: 20px; /* Add some space between sections */
+    }
+  
+    .footer-links h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+  
+    .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .footer-links li {
+      margin: 5px 0;
+    }
+  
+    .footer-links button {
+      font-size: 16px;
+    }
+  
+    .social-media {
+      align-items: center;
+      margin-top: 20px; /* Add some space between sections */
+    }
+  
+    .social-media h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center; /* Center the heading */
+      width: 100%;
+    }
+  
+    .social-media .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Ensure social icons are in a row */
+    }
+  
+    .social-media button {
+      font-size: 28px; /* Slightly smaller icons for smaller screens */
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-logo img {
+      height: 25px; /* Even smaller logo for very small screens */
+    }
+  
+    .footer-links h3, .social-media h3 {
+      font-size: 16px;
+    }
+  
+    .footer-links button {
+      font-size: 14px;
+      margin: 0 3px;
+    }
+  
+    .social-media .icons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap; /* Ensure social icons are in a row */
+    }
+  
+    .social-media button {
+      font-size: 26px; /* Slightly smaller icons for very small screens */
+      margin: 5px;
+    }
+  }
+  
