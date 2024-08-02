@@ -1,164 +1,176 @@
 /* Trading Platforms Section */
 .trading-platforms {
-    padding: 0;
-  }
-  
-  .hero-section {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: #E2E3F6;
-    overflow: hidden; /* Ensure the mask covers the entire hero section */
-  }
-  
-  .hero-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7); /* Black mask with 70% opacity */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px; /* Adjust this padding to move the content up */
-  }
-  
-  .hero-title {
-    font-size: 4em;
-    margin-bottom: 10px;
-    margin-top: -50px; /* Adjust this value as needed */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .hero-subtitle {
-    font-size: 2em;
-    margin-top: 20px; /* Adjust this value as needed */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
-  }
-  
-  .dx-logo {
-    position: relative;
-    margin-top: 5rem; /* Adjust this value to control the space between the subtitle and the logo */
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out 0.4s, transform 1s ease-out 0.4s;
-  }
-  
-  .dx-logo img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .platform-info-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 40px 20px;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
-  }
-  
-  .platform-logo {
-    max-width: 400px;
-    margin: 20px 0;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out 0.4s, transform 1s ease-out 0.4s;
-  }
-  
-  .platform-logo img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .platform-details {
-    max-width: 600px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #E2E3F6;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
-    margin: 0 20px;
-  }
-  
-  .platform-details h2 {
-    margin-bottom: 20px;
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    font-weight: bold;
-    font-size: 2em;
-    color: #E2E3F6;
-  }
-  
-  .platform-details ul {
-    list-style-type: disc;
-    padding-left: 20px;
-  }
-  
-  .download-section {
-    text-align: center;
-    margin: 40px 20px;
-  }
-  
-  .download-buttons .download-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    margin: 10px;
-    background: linear-gradient(160deg, #2B3C90, #2BB673); /* Gradient using the first two colors */
-    color: #E2E3F6;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    font-weight: bold;
-    transition: background 0.3s ease, transform 0.3s ease, opacity 1s ease-out 0.3s, transform 0.5s ease-out 0.3s;
-  }
-  
-  .download-buttons .download-button:hover {
-    background-color: #05F1A7; /* Hover color */
-    transform: translateY(-5px); /* Slight upward movement on hover */
-  }
-  
-  .download-buttons .download-button svg {
-    margin-left: 8px; /* Adjust the space between text and icon */
-  }
-  
-  /* Animation Classes */
-  .animate-on-scroll {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
-  
-  .animate-on-scroll.animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .platform-details.animate,
-  .platform-logo.animate,
-  .download-buttons .download-button.animate,
-  .dx-logo.animate {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
+  padding: 0;
+}
+
+.hero-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #E2E3F6;
+  overflow: hidden;
+  /* Ensure the mask covers the entire hero section */
+}
+
+.hero-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  /* Black mask with 70% opacity */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+  /* Adjust this padding to move the content up */
+}
+
+.hero-title {
+  font-size: 4em;
+  margin-bottom: 10px;
+  margin-top: -50px;
+  /* Adjust this value as needed */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.hero-subtitle {
+  font-size: 2em;
+  margin-top: 20px;
+  /* Adjust this value as needed */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
+}
+
+.dx-logo {
+  position: relative;
+  margin-top: 5rem;
+  /* Adjust this value to control the space between the subtitle and the logo */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out 0.4s, transform 1s ease-out 0.4s;
+}
+
+.dx-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.platform-info-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 20px;
+  flex-wrap: wrap;
+  /* Allow wrapping for small screens */
+}
+
+.platform-logo {
+  max-width: 400px;
+  margin: 20px 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out 0.4s, transform 1s ease-out 0.4s;
+}
+
+.platform-logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.platform-details {
+  max-width: 600px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #E2E3F6;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
+  margin: 0 20px;
+}
+
+.platform-details h2 {
+  margin-bottom: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: #E2E3F6;
+}
+
+.platform-details ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.download-section {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.download-buttons .download-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px;
+  background: linear-gradient(160deg, #2B3C90, #2BB673);
+  /* Gradient using the first two colors */
+  color: #E2E3F6;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.3s ease, opacity 1s ease-out 0.3s, transform 0.5s ease-out 0.3s;
+}
+
+.download-buttons .download-button:hover {
+  background-color: #05F1A7;
+  /* Hover color */
+  transform: translateY(-5px);
+  /* Slight upward movement on hover */
+}
+
+.download-buttons .download-button svg {
+  margin-left: 8px;
+  /* Adjust the space between text and icon */
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.platform-details.animate,
+.platform-logo.animate,
+.download-buttons .download-button.animate,
+.dx-logo.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-title {
     font-size: 2.5em;
-    margin-top: -50px; /* Move text up more on mobile */
+    margin-top: -50px;
+    /* Move text up more on mobile */
   }
 
   .hero-subtitle {
@@ -166,7 +178,8 @@
   }
 
   .dx-logo {
-    margin-top: 2rem; /* Adjust spacing for mobile */
+    margin-top: 2rem;
+    /* Adjust spacing for mobile */
   }
 
   .platform-info-section {
@@ -182,18 +195,23 @@
   .platform-details {
     font-size: 1em;
     max-width: 90%;
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    /* Align text to the left */
   }
 
   .platform-details ul {
     list-style-type: disc;
-    list-style-position: inside; /* Align bullets with the text */
-    padding-left: 20px; /* Reduced padding for mobile */
+    list-style-position: inside;
+    /* Align bullets with the text */
+    padding-left: 20px;
+    /* Reduced padding for mobile */
   }
 
   .platform-details li {
-    padding-left: 0; /* Remove padding from list items */
-    margin-left: 0; /* Remove margin to control gap between bullet and text */
+    padding-left: 0;
+    /* Remove padding from list items */
+    margin-left: 0;
+    /* Remove margin to control gap between bullet and text */
   }
 
   .platform-details h2 {
@@ -202,14 +220,16 @@
 
   .download-buttons .download-button {
     font-size: 1em;
-    padding: 8px 16px; /* Adjust button size for mobile */
+    padding: 8px 16px;
+    /* Adjust button size for mobile */
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2em;
-    margin-top: -100px; /* Move text up more on mobile */
+    margin-top: -100px;
+    /* Move text up more on mobile */
   }
 
   .hero-subtitle {
@@ -217,7 +237,8 @@
   }
 
   .dx-logo {
-    margin-top: 2rem; /* Adjust spacing for mobile */
+    margin-top: 2rem;
+    /* Adjust spacing for mobile */
     max-width: 500px;
   }
 
@@ -234,18 +255,23 @@
   .platform-details {
     font-size: 0.875em;
     max-width: 90%;
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    /* Align text to the left */
   }
 
   .platform-details ul {
     list-style-type: disc;
-    list-style-position: inside; /* Align bullets with the text */
-    padding-left: 20px; /* Reduced padding for smaller screens */
+    list-style-position: inside;
+    /* Align bullets with the text */
+    padding-left: 20px;
+    /* Reduced padding for smaller screens */
   }
 
   .platform-details li {
-    padding-left: 0; /* Remove padding from list items */
-    margin-left: 0; /* Remove margin to control gap between bullet and text */
+    padding-left: 0;
+    /* Remove padding from list items */
+    margin-left: 0;
+    /* Remove margin to control gap between bullet and text */
   }
 
   .platform-details h2 {
@@ -254,8 +280,7 @@
 
   .download-buttons .download-button {
     font-size: 0.875em;
-    padding: 6px 12px; /* Adjust button size for smaller screens */
+    padding: 6px 12px;
+    /* Adjust button size for smaller screens */
   }
 }
-
-

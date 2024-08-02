@@ -14,7 +14,7 @@ body {
   line-height: 1.6;
   background: linear-gradient(135deg, #2c2c2c 0%, #1a1919 100%);
   color: #fff;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
 }
