@@ -37,7 +37,7 @@
     font-size: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
-    color: #000; /* Ensure text color is visible */
+    color: #fff; /* Ensure text color is visible */
   }
   
   .faq-search-bar input::placeholder {

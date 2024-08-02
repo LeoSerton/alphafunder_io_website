@@ -3,16 +3,19 @@
 .home-page {
     width: 100%;
     position: relative;
-    z-index: 0; /* Ensure z-index is lower */
-    overflow-x: hidden; /*Prevent horizontal scrolling */
+    z-index: 0;
+    /* Ensure z-index is lower */
+    overflow-x: hidden;
+    /*Prevent horizontal scrolling */
   }
   
   /* Hero Section */
-  .hero-section {
+  .home-hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+    min-height: 100vh;
+    /* Ensure the section takes at least the full viewport height */
     background: linear-gradient(135deg, #333, #000000);
     color: white;
     text-align: center;
@@ -34,7 +37,7 @@
     margin-bottom: 5px;
     animation: fadeInDown 0.5s ease-in-out;
     font-weight: bold;
-    margin-top: -60px;
+    /* margin-top: -60px; */
   }
   
   .headline {
@@ -56,7 +59,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+    flex-wrap: wrap;
+    /* Ensure buttons wrap on smaller screens */
   }
   
   .home-challenge-button {
@@ -79,25 +83,25 @@
   
   /* Video Container */
   .video-container {
-    position: relative;
     width: 100%;
     max-width: 60%;
-    height: 700px; /* Set a fixed height for the container */
+    /* height: 700px; */
+    /* Set a fixed height for the container */
     overflow: hidden;
     border-radius: 15px;
     margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.2);
     animation: fadeIn 3s ease-in-out;
+    margin-bottom: 24px;
   }
   
-  .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
+  .video-container iframe {
     width: 100%;
-    height: 100%; /* Ensure the video fits the container height */
+    height: 100%;
+    /* Ensure the video fits the container height */
     border: 0;
-    object-fit: cover; /* Ensure the video covers the container without distortion */
+    object-fit: cover;
+    /* Ensure the video covers the container without distortion */
   }
   
   /* TradingView Ticker Tape Widget */
@@ -106,17 +110,23 @@
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 100px; /* Adjust this value to set the desired height */
-    min-height: 100px; /* Ensures the height doesn't shrink below this value */
-    max-height: 100px; /* Ensures the height doesn't grow above this value */
+    height: 100px;
+    /* Adjust this value to set the desired height */
+    min-height: 100px;
+    /* Ensures the height doesn't shrink below this value */
+    max-height: 100px;
+    /* Ensures the height doesn't grow above this value */
     overflow: hidden;
   }
   
   .tradingview-widget-container__widget {
     width: 100%;
-    height: 100px; /* Adjust this value to match the container height */
-    min-height: 100px; /* Ensures the height doesn't shrink below this value */
-    max-height: 100px; /* Ensures the height doesn't grow above this value */
+    height: 100px;
+    /* Adjust this value to match the container height */
+    min-height: 100px;
+    /* Ensures the height doesn't shrink below this value */
+    max-height: 100px;
+    /* Ensures the height doesn't grow above this value */
     overflow: hidden;
   }
   
@@ -129,6 +139,7 @@
     0% {
       opacity: 0;
     }
+  
     100% {
       opacity: 1;
     }
@@ -139,85 +150,92 @@
       opacity: 0;
       transform: translateY(-20px);
     }
+  
     100% {
       opacity: 1;
       transform: translateY(0);
     }
   }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .pre-headline {
-      font-size: 2rem;
-      /* margin-top: -50px; */
-      margin-bottom: 50px;
-      
-    }
-  
-    .headline {
-      font-size: 1rem;
-      max-width: 100%;
-    }
-  
-    .description {
-      font-size: 1.25rem;
-    }
-  
-    .video-container {
-      width: 90%;
-      height: 300px; /* Adjusted height for tablets */
-    }
-  
-    .tradingview-widget-container {
-      height: 50px; /* Adjusted height for tablets */
-    }
-  
-    .tradingview-widget-container__widget {
-      height: 50px; /* Adjusted height for tablets */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .text-container {
-      margin-top: 2rem;
-    }
-  
-    .pre-headline {
-      font-size: 1.5rem;
-      /* margin-top: -100px; */
-      margin-bottom: 50px;
-    }
-  
-    .headline {
-      font-size: 20px;
-      max-width: 100%;
-    }
-  
-    .description {
-      font-size: 1rem;
-    }
-  
-    .video-container {
-      width: 100%;
-      max-width: 500px;
-      height: 250px; /* Adjusted height for mobile devices */
-      margin-top: 10px;
-    }
-  
-    .tradingview-widget-container {
-      height: 50px; /* Adjusted height for mobile devices */
-    }
-  
-    .tradingview-widget-container__widget {
-      height: 50px; /* Adjusted height for mobile devices */
-    }
-  }
-  
+  /* The media queries below have been copied to the bottom of the css page for order of execusion to fix the hero section text. Feel free to remove teh copy here*/
+                                        /* Responsive adjustments */
+                                        @media (max-width: 768px) {
+                                            .pre-headline {
+                                            font-size: 1.5rem;
+                                            /* margin-top: -50px; */
+                                            margin-bottom: 50px;
+                                            }
+                                        
+                                            .headline {
+                                            font-size: 1rem;
+                                            max-width: 100%;
+                                            }
+                                        
+                                            .description {
+                                            font-size: 1.25rem;
+                                            }
+                                        
+                                            .video-container {
+                                            width: 90%;
+                                            height: 300px;
+                                            /* Adjusted height for tablets */
+                                            }
+                                        
+                                            .tradingview-widget-container {
+                                            height: 50px;
+                                            /* Adjusted height for tablets */
+                                            }
+                                        
+                                            .tradingview-widget-container__widget {
+                                            height: 50px;
+                                            /* Adjusted height for tablets */
+                                            }
+                                        }
+                                        
+                                        @media (max-width: 480px) {
+                                            .text-container {
+                                            margin-top: 2rem;
+                                            }
+                                        
+                                            .pre-headline {
+                                            font-size: 0.75rem;
+                                            /* margin-top: -100px; */
+                                            margin-bottom: 50px;
+                                            }
+                                        
+                                            .headline {
+                                            font-size: 16px;
+                                            max-width: 100%;
+                                            }
+                                        
+                                            .description {
+                                            font-size: 1rem;
+                                            }
+                                        
+                                            .video-container {
+                                            width: 100%;
+                                            max-width: 500px;
+                                            height: 250px;
+                                            /* Adjusted height for mobile devices */
+                                            margin-top: 10px;
+                                            }
+                                        
+                                            .tradingview-widget-container {
+                                            height: 50px;
+                                            /* Adjusted height for mobile devices */
+                                            }
+                                        
+                                            .tradingview-widget-container__widget {
+                                            height: 50px;
+                                            /* Adjusted height for mobile devices */
+                                            }
+                                        }
+  /*--------------------------------------*/
   /* Adjustments for laptops (max-width: 1440px) */
   @media (max-width: 1440px) {
     .pre-headline {
       font-size: 2.5rem;
-      margin-top: -40px; /* Adjust margin for laptops */
+      margin-top: -40px;
+      /* Adjust margin for laptops */
       margin-bottom: 30px;
     }
   
@@ -227,16 +245,51 @@
   
     .video-container {
       width: 80%;
-      height: 600px; /* Adjusted height for laptops */
+      height: 600px;
+      /* Adjusted height for laptops */
     }
   
     .tradingview-widget-container {
-      margin-top: 0px; /* Move the ticker down for more video space */
-      height: 100px; /* Adjusted height for laptops */
+      margin-top: 0px;
+      /* Move the ticker down for more video space */
+      height: 100px;
+      /* Adjusted height for laptops */
     }
   
     .tradingview-widget-container__widget {
-      height: 100px; /* Adjusted height for laptops */
+      height: 100px;
+      /* Adjusted height for laptops */
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .pre-headline {
+      font-size: 2.5rem;
+      margin-top: -40px;
+      /* Adjust margin for laptops */
+      margin-bottom: 30px;
+    }
+  
+    .headline {
+      font-size: 4rem;
+    }
+  
+    .video-container {
+      width: 80%;
+      height: 600px;
+      /* Adjusted height for laptops */
+    }
+  
+    .tradingview-widget-container {
+      margin-top: 0px;
+      /* Move the ticker down for more video space */
+      height: 100px;
+      /* Adjusted height for laptops */
+    }
+  
+    .tradingview-widget-container__widget {
+      height: 100px;
+      /* Adjusted height for laptops */
     }
   }
   
@@ -249,37 +302,50 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    box-sizing: border-box; /* Ensure padding is included in width */
-    width: 100%; /* Full width of the container */
+    box-sizing: border-box;
+    /* Ensure padding is included in width */
+    width: 100%;
+    /* Full width of the container */
   }
   
   .sub-hero-placeholder-image {
     display: flex;
-    width: 50%; /* Adjust width to fit better with text */
-    max-width: 550px; /* Ensure image doesn't get too large */
-    margin-right: 1rem; /* Adjust horizontal spacing */
-    margin-left: auto; /* Center image horizontally */
+    width: 50%;
+    /* Adjust width to fit better with text */
+    max-width: 550px;
+    /* Ensure image doesn't get too large */
+    margin-right: 1rem;
+    /* Adjust horizontal spacing */
+    margin-left: auto;
+    /* Center image horizontally */
     opacity: 0;
-    transform: translateX(-50px); /* Start position */
+    transform: translateX(-50px);
+    /* Start position */
     transition: opacity 1s ease, transform 1s ease;
   }
   
   .sub-hero-placeholder-image img {
-    width: 100%; /* Ensure the image fits its container */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Optional: keep the rounded corners */
+    width: 100%;
+    /* Ensure the image fits its container */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Optional: keep the rounded corners */
   }
   
   .content-text {
     max-width: 800px;
     width: 100%;
-    text-align: center;
+    text-align: left;
     margin-top: 3rem;
     opacity: 0;
-    transform: translateX(50px); /* Start position */
+    transform: translateX(50px);
+    /* Start position */
     transition: opacity 1s ease, transform 1s ease;
-    margin-left: 1rem; /* Adjust horizontal spacing */
-    margin-right: auto; /* Adjust horizontal spacing */
+    margin-left: 1rem;
+    /* Adjust horizontal spacing */
+    margin-right: auto;
+    /* Adjust horizontal spacing */
   }
   
   .content-text h2 {
@@ -298,50 +364,65 @@
   /* Animation class */
   .animate {
     opacity: 1 !important;
-    transform: translateX(0) !important; /* End position */
+    transform: translateX(0) !important;
+    /* End position */
   }
   
   @media (min-width: 768px) {
     .content-section {
       flex-direction: row;
       align-items: flex-start;
-      gap: 2rem; /* Adjust gap between image and text */
-      justify-content: center; /* Center the content */
+      gap: 2rem;
+      /* Adjust gap between image and text */
+      justify-content: center;
+      /* Center the content */
     }
   
     .content-text {
       text-align: left;
-      margin-top: 0; /* Remove top margin for larger screens */
-      margin-right: 1rem; /* Adjust horizontal spacing */
+      margin-top: 0;
+      /* Remove top margin for larger screens */
+      margin-right: 1rem;
+      /* Adjust horizontal spacing */
     }
   
     .sub-hero-placeholder-image {
-      margin-left: 0; /* Remove left margin for larger screens */
-      margin-right: 1rem; /* Adjust horizontal spacing */
+      margin-left: 0;
+      /* Remove left margin for larger screens */
+      margin-right: 1rem;
+      /* Adjust horizontal spacing */
     }
   }
   
   @media (max-width: 480px) {
     .content-section {
-      padding: 20px 10px; /* Adjust padding for smaller screens */
+      padding: 20px 10px;
+      /* Adjust padding for smaller screens */
     }
   
     .content-text {
-      margin-top: 1rem; /* Adjust top margin for smaller screens */
-      margin-left: auto; /* Center text horizontally */
-      margin-right: auto; /* Center text horizontally */
+      margin-top: 1rem;
+      /* Adjust top margin for smaller screens */
+      margin-left: auto;
+      /* Center text horizontally */
+      margin-right: auto;
+      /* Center text horizontally */
     }
   
     .sub-hero-placeholder-image {
-      width: 90%; /* Adjust width for smaller screens */
-      margin-right: auto; /* Center image horizontally */
-      margin-left: auto; /* Center image horizontally */
-      margin-bottom: 1rem; /* Add bottom margin for spacing */
+      width: 90%;
+      /* Adjust width for smaller screens */
+      margin-right: auto;
+      /* Center image horizontally */
+      margin-left: auto;
+      /* Center image horizontally */
+      margin-bottom: 1rem;
+      /* Add bottom margin for spacing */
     }
   }
   
-  /* Process Section */
-  #process-section {
+ /* Process Section */
+#process-section {
     background-color: #fff;
     padding: 50px 20px;
     text-align: center;
@@ -353,6 +434,7 @@
     font-size: 2.5rem;
     margin-bottom: 5px;
     color: #caa84e;
+    align-items: center;
   }
   
   .process-subtitle {
@@ -375,7 +457,7 @@
     width: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    z-index: 1; /* Ensure z-index is higher */
+    z-index: 1;
     position: relative;
   }
   
@@ -472,8 +554,8 @@
   .get-started-button:hover,
   .more-faq-button:hover {
     background-color: #b58f28;
-    transform: translateY(-5px); /* Move the button upwards */
-    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
   }
   
   /* Responsive adjustments */
@@ -490,54 +572,113 @@
   
     .process-container {
       width: 90%;
-      padding: 10px; /* Adjust padding for smaller screens */
-      align-items: flex-start; /* Align items to flex-start */
+      padding: 10px;
+      align-items: flex-start;
     }
   
     .progress-line,
     .circle {
-      display: none; /* Hide the progress line and dots on smaller screens */
+      display: none;
     }
   
     .process-steps {
       flex-direction: column;
       align-items: center;
-      position: relative; /* Add this to ensure padding-left works correctly */
-      padding-left: 0px; /* Add padding to account for the circles on the left */
+      padding-left: 0px;
     }
   
     .step {
       max-width: none;
       width: 100%;
       position: relative;
+      padding: 20px 30px; /* Increased side padding for mobile view */
     }
   
     .step-icon {
-      font-size: 1.5rem; /* Adjust icon size */
+      font-size: 1.5rem;
     }
   
     .step h3 {
-      font-size: 1rem; /* Adjust heading font size */
+      font-size: 1rem;
     }
   
     .step p {
-      font-size: 0.75rem; /* Adjust paragraph font size */
+      font-size: 0.75rem;
     }
   
     .process-buttons {
-      flex-direction: column; /* Stack buttons vertically on mobile */
-      gap: 10px; /* Adjust gap between buttons */
+      flex-direction: column;
+      gap: 10px;
       margin-left: 3rem;
     }
   
     .get-started-button,
     .more-faq-button {
-      padding: 10px 20px; /* Adjust button padding */
-      font-size: 0.875rem; /* Adjust button font size */
+      padding: 10px 20px;
+      font-size: 0.875rem;
       align-items: center;
-      /* margin-left: 0rem; */
     }
   }
+  
+  /* Additional media queries for better centering on smaller devices */
+  @media (max-width: 480px) {
+    .process-title {
+      font-size: 1.8rem;
+      margin: 0 auto;
+    }
+  
+    .process-subtitle {
+      font-size: 0.9rem;
+      margin: 0 auto;
+    }
+  
+    .process-buttons {
+      margin: 0 auto;
+      gap: 10px;
+    }
+  
+    .get-started-button,
+    .more-faq-button {
+      width: 80%;
+      margin: 0 auto;
+      padding: 10px 20px;
+      font-size: 0.875rem;
+    }
+
+    .step {
+        padding: 20px 40px; /* Increased side padding for very small screens */
+      }
+  }
+  
+  @media (max-width: 375px) {
+    .process-title {
+      font-size: 1.5rem;
+      margin: 0 auto;
+    }
+  
+    .process-subtitle {
+      font-size: 0.8rem;
+      margin: 0 auto;
+    }
+  
+    .process-buttons {
+      margin: 0 auto;
+      gap: 10px;
+    }
+  
+    .get-started-button,
+    .more-faq-button {
+      width: 90%;
+      margin: 0 auto;
+      padding: 10px 15px;
+      font-size: 0.875rem;
+    }
+  
+    .step {
+      padding: 20px 40px; /* Increased side padding for very small screens */
+    }
+  }
+  
   
   /* Why Us Section */
   .why-us-section {
@@ -547,7 +688,8 @@
     text-align: center;
     min-height: 600px;
     position: relative;
-    z-index: 2; /* Ensure z-index is higher */
+    z-index: 2;
+    /* Ensure z-index is higher */
   }
   
   .why-us-title {
@@ -624,7 +766,8 @@
   
   @media (max-width: 768px) {
     .why-us-cards {
-      grid-template-columns: 1fr; /* Stack cards on mobile */
+      grid-template-columns: 1fr;
+      /* Stack cards on mobile */
       gap: 20px;
     }
   
@@ -676,7 +819,8 @@
     min-height: 600px;
     box-sizing: border-box;
     position: relative;
-    z-index: 2; /* Ensure z-index is higher */
+    z-index: 2;
+    /* Ensure z-index is higher */
     box-shadow: #333;
     margin-top: -50px;
   }
@@ -687,14 +831,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%; /* Ensure container takes full width */
+    width: 100%;
+    /* Ensure container takes full width */
     max-width: 70%;
     height: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-    overflow: hidden; /* Ensure no overflow */
+    overflow: hidden;
+    /* Ensure no overflow */
   }
   
   .become-funded-container.animate {
@@ -740,22 +886,29 @@
   .become-funded-button:hover {
     background-color: #caa84e;
     color: white;
-    transform: translateY(-5px); /* Move the button upwards */
-    transition: transform 0.3s ease; /* Smooth transition for the transform property */
+    transform: translateY(-5px);
+    /* Move the button upwards */
+    transition: transform 0.3s ease;
+    /* Smooth transition for the transform property */
   }
   
   .become-funded-image-container {
-    flex: 0 0 300px; /* Set a fixed width for the image container */
+    flex: 0 0 300px;
+    /* Set a fixed width for the image container */
     display: flex;
-    height: 100%; /* Match the container height */
-    overflow: hidden; /* Ensure no overflow */
+    height: 100%;
+    /* Match the container height */
+    overflow: hidden;
+    /* Ensure no overflow */
   }
   
   .become-funded-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensure the image covers the area without distortion */
-    border-radius: 0 15px 15px 0; /* Match the container's border radius */
+    object-fit: cover;
+    /* Ensure the image covers the area without distortion */
+    border-radius: 0 15px 15px 0;
+    /* Match the container's border radius */
   }
   
   /* Responsive adjustments */
@@ -788,7 +941,8 @@
     }
   
     .become-funded-image-container {
-      display: none; /* Hide the image container on mobile */
+      display: none;
+      /* Hide the image container on mobile */
     }
   }
   
@@ -808,6 +962,80 @@
   
     .become-funded-buttons {
       gap: 5px;
+    }
+  }
+/*The media queries below have been copied from the top of this page and controls the hero section. 
+It has been pasted here for order of execusion reasons, feel free to remove the top section that has been tabbed.*/
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .pre-headline {
+      font-size: 1.5rem;
+      /* margin-top: -50px; */
+      margin-bottom: 50px;
+    }
+  
+    .headline {
+      font-size: 1rem;
+      max-width: 100%;
+    }
+  
+    .description {
+      font-size: 1.25rem;
+    }
+  
+    .video-container {
+      width: 90%;
+      height: 300px;
+      /* Adjusted height for tablets */
+    }
+  
+    .tradingview-widget-container {
+      height: 50px;
+      /* Adjusted height for tablets */
+    }
+  
+    .tradingview-widget-container__widget {
+      height: 50px;
+      /* Adjusted height for tablets */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container {
+      margin-top: 2rem;
+    }
+  
+    .pre-headline {
+      font-size: 2rem;
+      /* margin-top: -100px; */
+      margin-bottom: 50px;
+    }
+  
+    .headline {
+      font-size: 2.5rem;
+      max-width: 100%;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  
+    .video-container {
+      width: 100%;
+      max-width: 500px;
+      height: 250px;
+      /* Adjusted height for mobile devices */
+      margin-top: 10px;
+    }
+  
+    .tradingview-widget-container {
+      height: 50px;
+      /* Adjusted height for mobile devices */
+    }
+  
+    .tradingview-widget-container__widget {
+      height: 50px;
+      /* Adjusted height for mobile devices */
     }
   }
   

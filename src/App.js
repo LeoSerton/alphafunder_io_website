@@ -1,40 +1,5 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Header from './components/Header/Header';
-// import Footer from './components/Footer/Footer';
-// import HomePage from './pages/HomePage';
-// import TradingObjectives from './pages/TradingObjectives';
-// import FAQ from './pages/FAQ';
-// import Testimonials from './pages/Testimonials';
-// import TradingPlatforms from './pages/TradingPlatforms';
-// import Symbols from './pages/Symbols';
-// import AboutUs from './pages/AboutUs';
-// import Contact from './pages/Contact';
-// import ClientArea from './pages/ClientArea';
 
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Header />
-//       <Routes>
-//         <Route path="/" element={<HomePage />} />
-//         <Route path="/trading-objectives" element={<TradingObjectives />} />
-//         <Route path="/faq" element={<FAQ />} />
-//         <Route path="/testimonials" element={<Testimonials />} />
-//         <Route path="/trading-platforms" element={<TradingPlatforms />} />
-//         <Route path="/symbols" element={<Symbols />} />
-//         <Route path="/about-us" element={<AboutUs />} />
-//         <Route path="/contact" element={<Contact />} />
-//         <Route path="/client-area" element={<ClientArea />} />
-//       </Routes>
-//       <Footer />
-//     </Router>
-//   );
-// };
-
-// export default App;
-
+/////////////////////////////////
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -118,4 +83,4 @@ const App = () => {
 
 export default App;
 
-
+////////////////////////////////////////////////////////////////////////
