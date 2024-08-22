@@ -128,8 +128,10 @@ const ClientArea = () => {
             </div>
             <button type="submit">Delete Account</button>
           </form>
+        </div >
+        <div className="client-join-discord-section">
+          <JoinDiscordSection /> {/* Add the Discord section */}
         </div>
-        <JoinDiscordSection /> {/* Add the Discord section */}
       </section>
 
       {/* Add the custom confirmation modal */}
