@@ -198,7 +198,14 @@ const Header = () => {
               <li><Link to="/contact">Contact</Link></li>
             </ul>
           </li>
-          <li><a href="https://client.alphafunder.io/sign-in">Client Area</a></li>
+          {/* <li><a href="https://client.alphafunder.io/sign-in">Client Area</a></li> */}
+          <li>
+            <Link to="/client-area">Client Area <FontAwesomeIcon icon={faCaretDown} /></Link>
+            <ul className="dropdown">
+            <li><a href="https://client.alphafunder.io/sign-in">Client Area</a></li>
+              <li><Link to="/client-area">Delete Account</Link></li>
+            </ul>
+          </li>
         </ul>
         <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
           ☰
@@ -236,7 +243,15 @@ const Header = () => {
                 <li><Link to="/contact" onClick={toggleMobileMenu}>Contact</Link></li>
               </ul>
             </li>
-            <li><a href="https://client.alphafunder.io/sign-in" onClick={toggleMobileMenu}>Client Area</a></li>
+            {/* Instead of redirecting to client side, opens up a new client page with more options. */}
+            {/* <li><a href="https://client.alphafunder.io/sign-in" onClick={toggleMobileMenu}>Client Area</a></li> */}
+            <li>
+              <Link to="/client-area" onClick={toggleMobileMenu}>Client Area <FontAwesomeIcon icon={faCaretDown} /></Link>
+              <ul className="dropdown">
+              <li><a href="https://client.alphafunder.io/sign-in">Client Area</a></li>
+                <li><Link to="/client-area" onClick={toggleMobileMenu}>Delete Account</Link></li>
+              </ul>
+            </li>
           </ul>
         </div>
       </div>

@@ -250,22 +250,22 @@ const FAQ = () => {
         { question: 'How long does it take to become an Alpha Trader?', 
           answer: <p>
             <h2>1-Step Challenge (Verification)</h2><br></br>
-            <li><strong>Minimum Trading Days:</strong>Trade for at least 10 days (can be non-consecutive).</li>
-            <li><strong>No Maximum Time Limit:</strong>There is no maximum time limit to complete our Verification Process – take as long as you need!</li>
-            <li><strong>Trading Objectives:</strong>Meet all 6 Trading Objectives and your trades will be reviewed.</li>
-            <li><strong>Live Account Activation:</strong>Start using your Alpha Funded Account after a minimum of just<strong> 10 trading days.</strong></li>
+            <li><strong>Minimum Trading Days:</strong> Zero minimum trading days.</li>
+            <li><strong>No Maximum Time Limit:</strong> There is no maximum time limit to complete our Verification Process – take as long as you need!</li>
+            <li><strong>Trading Objectives:</strong> Meet all 5 Trading Objectives and your trades will be reviewed.</li>
+            <li><strong>Live Account Activation:</strong> Start using your Alpha Funded Account after a minimum of just<strong> 10 trading days.</strong></li>
             <br></br>
             <h2>2-Step Challenge (Evaluation & Verification)</h2><br></br>
             <li><strong>Evaluation Step</strong></li>
-            <strong>- Minimum Trading Days:</strong> Trade for at least 10 days (can be non-consecutive).<br></br>
+            <strong>- Minimum Trading Days:</strong> Zero minimum trading days.<br></br>
             <strong>- No Maximum Time Limit:</strong> Take as much time as you need!<br></br>
-            <strong>- Trading Objectives:</strong> Meet all 5 Trading Objectives in the Evaluation step and your trades will be reviewed.<br></br>
+            <strong>- Trading Objectives:</strong> Start using your 'live' Alpha Funded Account as soon as you pass your challenge and complete the KYC process, and once your trades have undergone review (1-2 business days). Theoretically, you could receive an Alpha Funded Account is as little as one business day.<br></br>
             <br></br>
             <li><strong>Verification Step</strong></li>
-            <strong>- Minimum Trading Days:</strong> Trade for at least 10 days (can be non-consecutive).<br></br>
+            <strong>- Minimum Trading Days:</strong> Zero minimum trading days.<br></br>
             <strong>- No Maximum Time Limit:</strong> Take as much time as you need!<br></br>
-            <strong>- Trading Objectives:</strong> Meet all 5 Trading Objectives in the Verification step and your trades will be reviewed.<br></br>
-            <strong>- Live Account Activation:</strong> Start using your 'live' Alpha Account after a minimum of just <strong>20 trading days</strong> (10+10 days).
+            <strong>- Trading Objectives:</strong> Meet all 4 Trading Objectives in the Verification step and your trades will be reviewed.<br></br>
+            <strong>- Live Account Activation:</strong> Start using your 'live' Alpha Funded Account as soon as you pass your challenge and complete the KYC process, and once your trades have undergone review (1-2 business days). Theoretically, you could receive an Alpha Funded Account is as little as one business day.
           </p> 
           },
         { question: 'What happens after I pass my Alpha Challenge?', 
@@ -362,7 +362,7 @@ const FAQ = () => {
             { 
               question: 'What is the minimum number of trading days required for the Challenge?', 
               answer: (
-                <p>The minimum time to complete the only Alpha Verification step is 10 trading days.</p>
+                <p>Zero days.</p>
               ) 
             },
             { 
@@ -532,7 +532,7 @@ const FAQ = () => {
             },
             {
               question: 'What is the minimum number of trading days required?',
-              answer: 'The minimum time to complete both the Evaluation and Verification steps are 10 trading days each (i.e. 20 days in total).',
+              answer: 'Zero days.',
             },
             {
               question: 'What is the maximum leverage I can use?',
@@ -865,26 +865,35 @@ const FAQ = () => {
             <i>You can pay for the Alpha Challenge using:</i><br></br>
             <br></br>
             <ul>
+              <li><strong>Card Payment</strong></li>
               <li><strong>Bank transfer</strong></li>
               <ul>
-                <li>- All clients can pay by standard bank transfer if they wish</li>
+                <li>- All clients can pay by standard bank transfer if they wish - use ZAP EFT</li>
               </ul>
-              <li><strong>Cryptocurrency</strong></li>
-              <ul>
-                <li>- All clients can pay by cryptocurrency if they wish</li>
-              </ul>
+              <li><strong>PayPal Wallet</strong></li>
               <li><strong>Instant EFT from the following banks (South African, Ghanaian, and Kenyan clients only):</strong></li>
               <ul>
-                <li>FNB</li>
-                <li>ABSA</li>
-                <li>STANDARD BANK</li>
-                <li>DISCOVERY</li>
-                <li>TYME BANK</li>
-                <li>NEDBANK</li>
-                <li>BIDVEST BANK</li>
-                <li>INVESTEC</li>
-                <li>AFRICAN BANK</li>
+                <li> CAPITEC (user ZAP EFT)</li>
+                <li> FNB (use Ozow)</li>
+                <li> ABSA (use Ozow)</li>
+                <li> STANDARD BANK (use Ozow)</li>
+                <li> DISCOVERY (use Ozow)</li>
+                <li> TYME BANK (use Ozow)</li>
+                <li> NEDBANK (use Ozow)</li>
+                <li> BIDVEST (use Ozow)</li>
+                <li> INVESTEC (use Ozow)</li>
+                <li> AFRICAN BANK (use Ozow)</li>
               </ul>
+            </ul>
+            </p>
+        },
+        {
+          question: 'Which Payment Providers do you offer',
+          answer: <p>
+            <ul>
+              <li>PayPayl (card & wallet)</li>
+              <li>Ozow (instant EFT)</li>
+              <li>Zap EFT (Capitec Pay, instant EFT, and standard bank transfer)</li>
             </ul>
             </p>
         },
@@ -901,7 +910,7 @@ const FAQ = () => {
         },
         {
           question: 'Is the Challenge fee reimbursed?',
-          answer: 'Yes, your fee will be reimbursed when you successfully pass the Alpha Challenge and identity verification, and once you execute your first Profit Split on your Alpha Funded Account.'
+          answer: 'Yes, your fee will be reimbursed when you successfully pass the Alpha Challenge, identity and trades verified, and once you execute your first Profit Split on your Alpha Funded Account.'
         },
         {
           question: 'I paid for my Alpha Challenge, when will I get my challenge account?',
@@ -972,33 +981,6 @@ const FAQ = () => {
   const filteredFAQs = searchQuery ? fuse.search(searchQuery).map(result => result.item) : faqData;
 
 
-  // // Filtering logic
-  // const filteredFAQs = faqData.map(category => {
-  //   const filteredCategoryFAQs = category.faqs ? category.faqs.filter(faq =>
-  //     faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-  //     (typeof faq.answer === 'string' && faq.answer.toLowerCase().includes(searchQuery.toLowerCase())) ||
-  //     (typeof faq.answer === 'object' && React.Children.toArray(faq.answer.props.children).some(child => 
-  //       typeof child === 'string' && child.toLowerCase().includes(searchQuery.toLowerCase())
-  //     ))
-  //   ) : [];
-
-  //   const filteredSubDropdowns = category.subDropdowns ? category.subDropdowns.map(subDropdown => ({
-  //     ...subDropdown,
-  //     faqs: subDropdown.faqs.filter(faq =>
-  //       faq.question.toLowerCase().includes(searchQuery.toLowerCase()) ||
-  //       (typeof faq.answer === 'string' && faq.answer.toLowerCase().includes(searchQuery.toLowerCase())) ||
-  //       (typeof faq.answer === 'object' && React.Children.toArray(faq.answer.props.children).some(child => 
-  //         typeof child === 'string' && child.toLowerCase().includes(searchQuery.toLowerCase())
-  //       ))
-  //     )
-  //   })).filter(subDropdown => subDropdown.faqs.length > 0) : [];
-
-  //   return {
-  //     ...category,
-  //     faqs: filteredCategoryFAQs,
-  //     subDropdowns: filteredSubDropdowns
-  //   };
-  // }).filter(category => category.faqs.length > 0 || (category.subDropdowns && category.subDropdowns.length > 0));
 
   const handleCategoryClick = (index) => {
     setActiveCategory(index === activeCategory ? null : index);
