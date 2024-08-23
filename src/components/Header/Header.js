@@ -336,7 +336,9 @@ const Header = () => {
             </ul>
           </li>
           <li>
-            <Link to="/client-area">Client Area <FontAwesomeIcon icon={faCaretDown} /></Link>
+            <a href="https://client.alphafunder.io/sign-in" target="_blank" rel="noopener noreferrer">
+              Client Area <FontAwesomeIcon icon={faCaretDown} />
+            </a>
             <ul className="dropdown">
               <li><a href="https://client.alphafunder.io/sign-in" target="_blank" rel="noopener noreferrer">Client Area</a></li>
               <li><Link to="/client-area">Delete Account</Link></li>

@@ -63,7 +63,7 @@ function Footer() {
           <li><a href="/AF-Terms-of-Use.pdf" target="_blank" rel="noopener noreferrer" class="footer-link-button">Terms of Use</a></li>
             <li><button onClick={() => openModal('terms-of-service.md')}>Terms & Conditions</button></li>
             <li><a href="/AF-PAIA-Manual.pdf" target="_blank" rel="noopener noreferrer" class="footer-link-button">PAIA Manual</a></li>
-            <li><a href="/AF-Privacy-Policy.pdf" target="_blank" rel="noopener noreferrer" class="footer-link-button">Privacy Policy</a></li>
+            <li><a href="/AF-Privacy-Policy.docx.pdf" target="_blank" rel="noopener noreferrer" class="footer-link-button">Privacy Policy</a></li>
             {/* <li><button onClick={() => openModal('privacy-policy.md')}>Privacy Policy</button></li> */}
             <li><button onClick={() => openModal('risk-disclosure.md')}>Risk Disclosure</button></li>
             <li><button onClick={() => openModal('refund-policy.md')}>Refund Policy</button></li>
@@ -109,11 +109,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-
-
-
-
-
-
