@@ -45,13 +45,27 @@
   }
   
   /* Button Container Styling */
-  .button-container,
-  .balance-buttons-container {
+  .button-container {
     display: flex;
     justify-content: center;
     gap: 20px; /* Adjust this value to increase/decrease space between buttons */
     margin-bottom: 20px;
     flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  }
+
+  .balance-buttons-container {
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    align-items: center; /* Center align rows */
+    gap: 20px; /* Space between rows */
+    margin-bottom: 20px;
+  }
+
+  .balance-buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
   }
   
   @media (max-width: 768px) {
@@ -59,11 +73,19 @@
     .balance-buttons-container {
       gap: 15px; /* Adjust gap for smaller screens */
     }
+
+    .balance-buttons-row {
+      gap: 15px; /* Adjust gap for smaller screens */
+    }
   }
   
   @media (max-width: 480px) {
     .button-container,
     .balance-buttons-container {
+      gap: 10px; /* Adjust gap for smaller screens */
+    }
+
+    .balance-buttons-row {
       gap: 10px; /* Adjust gap for smaller screens */
     }
   }

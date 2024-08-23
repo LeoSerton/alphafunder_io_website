@@ -34,6 +34,10 @@ const TradingObjectivesSection = () => {
   const getRefundableFee = () => {
     const refundableFees = {
       '1 Step': {
+        'R5,000': 'R219.99',
+        'R7,500': 'R309.99',
+        'R12,500': 'R449.99',
+        'R20,000': 'R649.99',
         'R50,000': 'R1,320',
         'R100,000': 'R2,200',
         'R250,000': 'R3,020',
@@ -42,6 +46,10 @@ const TradingObjectivesSection = () => {
         'R2,000,000': 'R11,000',
       },
       '2 Step': {
+        'R5,000': 'R199.99',
+        'R7,500': 'R279.99',
+        'R12,500': 'R399.99',
+        'R20,000': 'R599.99',
         'R50,000': 'R1,200',
         'R100,000': 'R2,000',
         'R250,000': 'R2,800',
@@ -188,22 +196,28 @@ const TradingObjectivesSection = () => {
           </button>
         </div>
         <div className="balance-buttons-container">
-          {[
-            'R50,000',
-            'R100,000',
-            'R250,000',
-            'R500,000',
-            'R1,000,000',
-            'R2,000,000',
-          ].map((balance) => (
-            <button
-              key={balance}
-              className={`balance-button ${selectedBalance === balance ? 'selected' : ''}`}
-              onClick={() => setSelectedBalance(balance)}
-            >
-              {balance}
-            </button>
-          ))}
+            <div className="balance-buttons-row">
+              {['R5,000', 'R7,500', 'R12,500', 'R20,000', 'R50,000'].map((balance) => (
+                <button
+                  key={balance}
+                  className={`balance-button ${selectedBalance === balance ? 'selected' : ''}`}
+                  onClick={() => setSelectedBalance(balance)}
+                >
+                  {balance}
+                </button>
+              ))}
+            </div>
+            <div className="balance-buttons-row">
+              {['R100,000', 'R250,000', 'R500,000', 'R1,000,000', 'R2,000,000'].map((balance) => (
+                <button
+                  key={balance}
+                  className={`balance-button ${selectedBalance === balance ? 'selected' : ''}`}
+                  onClick={() => setSelectedBalance(balance)}
+                >
+                  {balance}
+                </button>
+              ))}
+            </div>
         </div>
         <div className="div-table-container">
           <div className="div-table-row">
