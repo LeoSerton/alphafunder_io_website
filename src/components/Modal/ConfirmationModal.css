@@ -1,4 +1,4 @@
-.modal-backdrop {
+.confirm-modal-backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     z-index: 9999; /* Ensure it sits on top of other content */
   }
   
-  .modal-content {
+  .confirm-modal-content {
     background-color: #1e1e1e; /* Match the site’s theme */
     padding: 20px;
     border-radius: 10px;
@@ -22,7 +22,7 @@
     color: #fff;
   }
   
-  .modal-actions {
+  .confirm-modal-actions {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;

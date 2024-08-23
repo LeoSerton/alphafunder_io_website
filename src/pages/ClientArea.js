@@ -85,7 +85,7 @@ const ClientArea = () => {
   return (
     <div className="client-area">
       <section className="client-hero" ref={heroRef}>
-        <h1>Client Area</h1>
+        <h1>Delete Account</h1>
         <p>We're sorry to see you go.<br />You're always welcome to get funded again in the future.</p>
       </section>
       <section className="client-content">

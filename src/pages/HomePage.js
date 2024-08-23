@@ -284,6 +284,10 @@ import { TickerTape } from "react-ts-tradingview-widgets";
 const tickerSymbols = [
   { description: "AUD / CAD", proName: "OANDA:AUDCAD" },
   { description: "AUD / CHF", proName: "OANDA:AUDCHF" },
+  { description: "GOLD / USD", proName: "OANDA:XAUUSD" },
+  { description: "GOLD / EUR", proName: "OANDA:XAUEUR" },
+  { description: "SILVER / USD", proName: "OANDA:XAGUSD" },
+  { description: "SILVER / EUR", proName: "OANDA:XAGEUR" },
   { description: "AUD / JPY", proName: "OANDA:AUDJPY" },
   { description: "AUD / NZD", proName: "OANDA:AUDNZD" },
   { description: "AUD / USD", proName: "OANDA:AUDUSD" },
@@ -315,10 +319,16 @@ export const BecomeFundedSection = () => {
     navigate('/FAQ');
   };
 
-  const handleBuyChallengeRedirect = () => {
-    window.location.href = 'https://client.alphafunder.io/sign-in';
+  // This opens the new link in the same Tab, code below it opens in a new tab
+  // const handleBuyChallengeRedirect = () => {
+  //   window.location.href = 'https://client.alphafunder.io/sign-in';
 
+  // };
+
+  const handleBuyChallengeRedirect = () => {
+    window.open('https://client.alphafunder.io/sign-in', '_blank', 'noopener,noreferrer');
   };
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -352,7 +362,7 @@ export const BecomeFundedSection = () => {
           <h2 className="become-funded-title">Become an Alpha Trader</h2>
           <p className="become-funded-subtitle">Receive credentials instantly and login to the trader dashboard.</p>
           <div className="become-funded-buttons">
-            <button className="become-funded-button" onClick={handleBuyChallengeRedirect}>Start Challenge Now!</button>
+          <button className="become-funded-button" onClick={handleBuyChallengeRedirect}>Start Challenge Now!</button>
             <button className="become-funded-button" onClick={handleRedirectToFAQ}>View FAQs</button>
           </div>
         </div>
@@ -375,8 +385,13 @@ const HomePage = () => {
     navigate('/FAQ');
   };
 
+  // Code below opens the new pafe in the same tab, new code opens a new tab
+  // const handleBuyChallengeRedirect = () => {
+  //   window.location.href = 'https://client.alphafunder.io/sign-in';
+  // };
+  
   const handleBuyChallengeRedirect = () => {
-    window.location.href = 'https://client.alphafunder.io/sign-in';
+    window.open('https://client.alphafunder.io/sign-in', '_blank', 'noopener,noreferrer');
   };
 
   useEffect(() => {

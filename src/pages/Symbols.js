@@ -10,6 +10,16 @@ const Symbols = () => {
       "height": "100%",
       "symbolsGroups": [
         {
+          "name": "GOLD & SILVER",
+          "originalName": "INDICES",
+          "symbols": [
+            { "name": "OANDA:XAUUSD", "displayName": "GOLD / USD" },
+            { "name": "OANDA:XAUEUR", "displayName": "GOLD / EUR" },
+            { "name": "OANDA:XAGUSD", "displayName": "SILVER / USD" },
+            { "name": "OANDA:XAGEUR", "displayName": "SILVER / EUR" },
+          ]
+        },
+        {
           "name": "Forex",
           "originalName": "Forex",
           "symbols": [
@@ -86,6 +96,16 @@ const Symbols = () => {
       "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
       "symbolActiveColor": "rgba(41, 98, 255, 0.12)",
       "tabs": [
+        // {
+        //   "title": "GOLD & SILVER",
+        //   "symbols": [
+        //     { "s": "OANDA:XAUUSD", "d": "GOLD / USD" },
+        //     { "s": "OANDA:XAUEUR", "d": "GOLD / EUR" },
+        //     { "s": "OANDA:XAGUSD", "d": "SILVER / USD" },
+        //     { "s": "OANDA:XAGEUR", "d": "SILVER / EUR" },
+        //   ],
+        //   "originalTitle": "GOLD & SILVER"
+        // },
         {
           "title": "Indices",
           "symbols": [

@@ -138,7 +138,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-logo">
-          <img src="/images/AF_newLogo.png" alt="AF Logo" />
+          <img src="/images/AF_newLogo_white.png" alt="AF Logo" />
           <div className="contact-info">
             <p>
               <strong>Email:</strong> <a href="mailto:support@alphafunder.io">support@alphafunder.io</a><br />

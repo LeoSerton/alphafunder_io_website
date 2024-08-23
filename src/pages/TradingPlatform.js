@@ -68,9 +68,7 @@ const TradingPlatforms = () => {
       <div className="download-section">
         <h2 className="animate-on-scroll">Access DX Trade</h2>
         <div className="download-buttons animate-on-scroll">
-          <a href="https://dx.alphafunder.io/" className="download-button">
-            Web Browser <IoDesktopOutline />
-          </a>
+        <a href="https://dx.alphafunder.io/" className="download-button" target="_blank" rel="noopener noreferrer">Web Browser <IoDesktopOutline /></a>
         </div>
       </div>
     </div>

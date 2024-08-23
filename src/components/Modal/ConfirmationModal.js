@@ -7,10 +7,10 @@ const ConfirmationModal = ({ show, message, onConfirm, onCancel }) => {
   }
 
   return (
-    <div className="modal-backdrop">
-      <div className="modal-content">
+    <div className="confirm-modal-backdrop">
+      <div className="confirm-modal-content">
         <p>{message}</p>
-        <div className="modal-actions">
+        <div className="confirm-modal-actions">
           <button className="confirm-button" onClick={onConfirm}>Yes, Delete</button>
           <button className="cancel-button" onClick={onCancel}>Cancel</button>
         </div>

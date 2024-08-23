@@ -215,7 +215,7 @@ const TradingObjectivesSection = () => {
           {renderTableRows()}
         </div>
         <div className="buy-challenge-button animate">
-          <button onClick={() => window.location.href = 'https://client.alphafunder.io/sign-in'}>Start Challenge Now!</button>
+        <button onClick={() => window.open('https://client.alphafunder.io/sign-in', '_blank', 'noopener,noreferrer')}>Start Challenge Now!</button>
         </div>
       </div>
     </section>
