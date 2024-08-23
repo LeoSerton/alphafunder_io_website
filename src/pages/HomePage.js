@@ -481,10 +481,7 @@ const HomePage = () => {
           <span className="placeholder-text">Video Placeholder</span>
         </div> */}
         <div className="video-container">
-          <video controls>
-            <source src="/videos/jason-video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <iframe src="https://www.youtube.com/embed/22dquW4EYsQ?si=xq35dTLAXQtu56xn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <div className="tradingview-widget-container">
@@ -501,14 +498,14 @@ const HomePage = () => {
             Alpha Funder has developed a unique Challenge Process for traders that we specifically designed to discover trading talents in Africa.
           </p>
           <p>
-            Upon completing the Challenge Process, you will trade up to the equivalent of R2,000,000 on a single Alpha Funded Account. 
+            Upon completing the Challenge Process, you will trade up to the equivalent of R2,000,000 on a single Alpha Funded Account.
             However, you can trade up to the equivalent of R4,000,000 on multiple Alpha Funded Accounts!
             Alpha Traders can be rewarded for their performance with up to 90% of the profits they produce on an Alpha Funded account, without any risk of losing their own capital!
           </p>
           <p>
-            At the heart of our mission is to develop Alpha Funder into an international investment company. 
-            On realisation, our company will offer a unique composition of retail traders to investors. 
-            Let’s work together to build a community of successful retail traders in Africa. 
+            At the heart of our mission is to develop Alpha Funder into an international investment company.
+            On realisation, our company will offer a unique composition of retail traders to investors.
+            Let’s work together to build a community of successful retail traders in Africa.
           </p>
         </div>
       </div>
@@ -564,7 +561,7 @@ const HomePage = () => {
           <div className="why-us-card">
             <FaChartLine className="why-us-icon" />
             <h3>Refundable Challenge Fee</h3>
-            <p>Unlock your potential with Alpha Funder! Get your Alpha Challenge fee refunded upon your first profit split on your Alpha Funded Account. 
+            <p>Unlock your potential with Alpha Funder! Get your Alpha Challenge fee refunded upon your first profit split on your Alpha Funded Account.
               Trade confidently, knowing your investment is secure. Join, prove your skills, and earn both profits and a refund!</p>
           </div>
           <div className="why-us-card">
@@ -585,7 +582,7 @@ const HomePage = () => {
           <div className="why-us-card">
             <FaHeadset className="why-us-icon" />
             <h3>Customer Support: Alpha AI</h3>
-            <p> Experience the future of support with Alpha Funder’s AI chatbot, expertly trained to answer all your questions using our unique data! 
+            <p> Experience the future of support with Alpha Funder’s AI chatbot, expertly trained to answer all your questions using our unique data!
               Committed to leading the industry and empowering Africa, we ensure you get the best assistance. For live support, just ask the chatbot to connect you on WhatsApp.</p>
           </div>
         </div>
