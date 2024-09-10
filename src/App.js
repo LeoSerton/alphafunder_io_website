@@ -1,5 +1,3 @@
-
-/////////////////////////////////
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header';
@@ -13,7 +11,7 @@ import Symbols from './pages/Symbols';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import ClientArea from './pages/ClientArea';
-import './App.css'; // Ensure this import is present
+import './App.css';
 
 const App = () => {
   useEffect(() => {
@@ -45,11 +43,9 @@ const App = () => {
       }
     };
 
-    // Load the script
     loadScript();
 
     return () => {
-      // We will not remove the script here to avoid reloading issues
     };
   }, []);
 

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import './TradingObjectives.css';
 
 const TradingObjectivesSection = () => {
-  const [selectedBalance, setSelectedBalance] = useState('R50,000');
+  const [selectedBalance, setSelectedBalance] = useState('R5,000');
   const [selectedChallenge, setSelectedChallenge] = useState('1 Step');
   const sectionRef = useRef(null);
 
