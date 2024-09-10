@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { FaBullseye, FaChartLine, FaMoneyCheckAlt, FaPiggyBank, FaCalendarAlt, FaHeadset } from 'react-icons/fa';
 import { BecomeFundedSection } from './HomePage'; // Import the section from HomePage
-import './AboutUs.css';
+import '../../src/index.css';
 import JoinDiscordSection from '../components/JoinDiscordSection'; 
 
 const AboutUs = () => {

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './Symbols.css';
+import '../../src/index.css';
 import JoinDiscordSection from '../components/JoinDiscordSection';
 import { BecomeFundedSection } from './HomePage';
 

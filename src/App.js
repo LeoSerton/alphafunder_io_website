@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import TradingObjectives from './pages/TradingObjectives';
 import FAQ from './pages/FAQ';
@@ -79,4 +79,3 @@ const App = () => {
 
 export default App;
 
-////////////////////////////////////////////////////////////////////////

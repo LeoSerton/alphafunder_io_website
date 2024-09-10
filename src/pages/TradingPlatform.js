@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './TradingPlatform.css';
+import '../../src/index.css';
 import { IoDesktopOutline } from "react-icons/io5";
 
 const TradingPlatforms = () => {

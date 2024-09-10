@@ -6,6 +6,7 @@ import './SuccessModal.css';
 const SuccessModal = ({ show, message, onClose }) => {
   if (!show) return null;
 
+  // Modal to confirm contaact form success
   return (
     <div className="success-modal-overlay">
       <div className="success-modal-content">

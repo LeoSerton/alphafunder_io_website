@@ -3,9 +3,10 @@ import './ConfirmationModal.css';
 
 const ConfirmationModal = ({ show, message, onConfirm, onCancel }) => {
   if (!show) {
-    return null; // If the modal is not shown, return null to render nothing
+    return null; 
   }
 
+  // Modal to confirm account deletion
   return (
     <div className="confirm-modal-backdrop">
       <div className="confirm-modal-content">

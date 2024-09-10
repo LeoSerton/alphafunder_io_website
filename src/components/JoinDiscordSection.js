@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { FaDiscord } from 'react-icons/fa';
-import './JoinDiscordSection.css';
+import '../../src/index.css';
 
 const JoinDiscordSection = () => {
   const discordRef = useRef(null);

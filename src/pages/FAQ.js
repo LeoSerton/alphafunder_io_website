@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './FAQ.css';
+import '../../src/index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { BecomeFundedSection } from './HomePage'; // Import the section from HomePage

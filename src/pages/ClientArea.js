@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import './ClientArea.css';
-// import { useNavigate } from 'react-router-dom'; //creates warning due to not being used.
+import '../../src/index.css';
 import JoinDiscordSection from '../components/JoinDiscordSection';
 import emailjs from 'emailjs-com';
 import ConfirmationModal from '../components/Modal/ConfirmationModal';

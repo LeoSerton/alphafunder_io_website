@@ -1,7 +1,7 @@
 // src/pages/Testimonials.js
 
 import React from 'react';
-import './Testimonials.css';
+import '../../src/index.css';
 
 const Testimonials = () => {
   return (

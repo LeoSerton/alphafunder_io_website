@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { FaUserPlus, FaKey, FaRocket, FaDollarSign, FaBullseye, FaChartLine, FaMoneyCheckAlt, FaPiggyBank, FaCalendarAlt, FaHeadset } from 'react-icons/fa';
 import TradingObjectivesSection from '../pages/TradingObjectives';
-import './HomePage.css';
+import '../../src/index.css';
 import { useNavigate } from 'react-router-dom';
 import { TickerTape } from "react-ts-tradingview-widgets";
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './TradingObjectives.css';
+import '../../src/index.css';
 
 const TradingObjectivesSection = () => {
   const [selectedBalance, setSelectedBalance] = useState('R5,000');
