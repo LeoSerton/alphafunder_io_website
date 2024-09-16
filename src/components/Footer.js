@@ -47,13 +47,13 @@ function Footer() {
         <div className="footer-links">
           <h3>Links</h3>
           <ul>
-          <li><a href="/AF-Terms-of-Use.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms of Use</a></li>
-            <li><a href="/AF-Terms-and-Conditions.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms & Conditions</a></li>
-            <li><a href="/AF-PAIA-Manual.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">PAIA Manual</a></li>
-            <li><a href="/AF-Privacy-Policy.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Privacy Policy</a></li>
-            <li><a href="/AF-Risk_Disclosure.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Risk Disclosure</a></li>
-            <li><a href="/AF-Refund-Policy.pdf.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Refund Policy</a></li>
-            <li><a href="/AF-AML-POLICY.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Anti-Money Laundering Policy</a></li>
+          <li><a href="pdfs/AF-Terms-of-Use.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms of Use</a></li>
+            <li><a href="pdfs/AF-Terms-and-Conditions.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms & Conditions</a></li>
+            <li><a href="pdfs/AF-PAIA-Manual.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">PAIA Manual</a></li>
+            <li><a href="pdfs/AF-Privacy-Policy.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Privacy Policy</a></li>
+            <li><a href="pdfs/AF-Risk_Disclosure.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Risk Disclosure</a></li>
+            <li><a href="pdfs/AF-Refund-Policy.pdf.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Refund Policy</a></li>
+            <li><a href="pdfs/AF-AML-POLICY.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Anti-Money Laundering Policy</a></li>
           </ul>
         </div>
         <div className="social-media">
