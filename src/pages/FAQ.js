@@ -6,7 +6,7 @@ import { BecomeFundedSection } from './HomePage'; // Import the section from Hom
 import JoinDiscordSection from '../components/JoinDiscordSection'; 
 import { useNavigate } from 'react-router-dom';
 import TradingObjectivesSection from './TradingObjectives';
-import Fuse from 'fuse.js'; // Import Fuse.js
+import Fuse from 'fuse.js'; 
 
 const FAQItem = ({ question, answer }) => {
   const [isActive, setIsActive] = useState(false);

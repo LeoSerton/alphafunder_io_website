@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../../src/index.css';
 import { useNavigate } from 'react-router-dom';
-import emailjs from 'emailjs-com'; // Import EmailJS
-import SuccessModal from '../components/Modal/SuccessModal'; // Import the SuccessModal
+import emailjs from 'emailjs-com'; 
+import SuccessModal from '../components/Modal/SuccessModal'; 
 
 const Contact = () => {
   const navigate = useNavigate();
@@ -34,7 +34,6 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Replace with your EmailJS Service ID, Template ID, and User ID
     const serviceID = 'service_p6if8ig';
     const templateID = 'template_n3k84bk';
     const userID = 'mfA2QXRBwk1-LBLQa';

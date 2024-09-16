@@ -1,22 +1,9 @@
-import React, { useState } from 'react';
-import Modal from './Modal/Modal';
-import ModalContent from './Modal/ModalContent';
+import React from 'react';
 import { FaDiscord, FaInstagram, FaWhatsapp, FaFacebook } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import '../index.css';
 
 function Footer() {
-  const [modalFile, setModalFile] = useState('');
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = (file) => {
-    setModalFile(file);
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
 
   const handleSocialClick = (platform) => {
     let url = '';
@@ -61,11 +48,11 @@ function Footer() {
           <h3>Links</h3>
           <ul>
           <li><a href="/AF-Terms-of-Use.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms of Use</a></li>
-            <li><button onClick={() => openModal('terms-of-service.md')}>Terms & Conditions</button></li>
+            <li><a href="/AF-Terms-and-Conditions.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Terms & Conditions</a></li>
             <li><a href="/AF-PAIA-Manual.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">PAIA Manual</a></li>
             <li><a href="/AF-Privacy-Policy.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Privacy Policy</a></li>
-            <li><button onClick={() => openModal('risk-disclosure.md')}>Risk Disclosure</button></li>
-            <li><button onClick={() => openModal('refund-policy.md')}>Refund Policy</button></li>
+            <li><a href="/AF-Risk_Disclosure.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Risk Disclosure</a></li>
+            <li><a href="/AF-Refund-Policy.pdf.docx.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Refund Policy</a></li>
             <li><a href="/AF-AML-POLICY.pdf" target="_blank" rel="noopener noreferrer" className="footer-link-button">Anti-Money Laundering Policy</a></li>
           </ul>
         </div>
@@ -98,11 +85,6 @@ function Footer() {
           All information provided on this site is intended solely for educational purposes related to trading on financial markets and does not serve in any way as a specific investment recommendation, business recommendation, investment opportunity analysis or similar general recommendation regarding the trading of investment instruments. Alpha Funder only provides services of simulated trading and educational tools for traders. The information on this site is not directed at resident in any country or jurisdiction where such distribution or use would be contrary to local laws or regulations. Alpha Funder does not act as a broker and do not accept any deposits. The offered technical solution the Alpha Funder platform and data feed is powered by liquidity providers.
         </p>
       </div>
-      {isModalOpen && (
-        <Modal onClose={closeModal}>
-          <ModalContent file={modalFile} />
-        </Modal>
-      )}
     </footer>
   );
 }
